@@ -1,7 +1,5 @@
 # Fraud Transaction Lookup
 
-CSIS 4260 – Emerging Technologies in Data Analytics
-
 A web app that gives an instant fraud assessment for a single transaction. Enter a transaction ID and the app scores it with three detection layers, then shows the verdict, a confidence gauge, and what each layer decided.
 
 **Live demo:** _add your Streamlit Cloud link here_
@@ -34,9 +32,7 @@ A transaction is flagged if **any** of the three layers fires:
 |---|---|
 | `streamlit_app.py` | The web app (UI, database lookup, scoring call) |
 | `fraud_scoring.py` | The 3-layer scoring logic |
-| `fraud_rf.joblib` | Trained Random Forest model |
 | `isolation_forest.joblib` | Trained Isolation Forest model |
-| `fraud_lookup.db` | SQLite database of transactions, indexed by transaction ID |
 | `requirements.txt` | Python dependencies |
 
 ## Run it locally
